@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .card {
+    background-color: theme("colors.white");
+    border-radius: theme("borderRadius.lg");
+    padding: theme("spacing.6");
+    box-shadow: theme("boxShadow.xl");
+  }
+
+  .cards {
+    overflow-x: scroll;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 16px;
+  }
+
+  .cards::-webkit-scrollbar {
+    width: 0;
+  }
+
+  .movie-card {
+    min-width: 288px;
+    height: 160px;
+  }
+
+  .category-card {
+    min-width: 200px;
+    min-height: 280px;
+  }
+}
